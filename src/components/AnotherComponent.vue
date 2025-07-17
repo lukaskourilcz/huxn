@@ -1,3 +1,3 @@
 <template>
-    <h1>Nested Component</h1>
+    <h3>Nested Component</h3>
 </template>
