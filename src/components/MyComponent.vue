@@ -1,18 +1,16 @@
 <script setup>
 
-const myMessage = 'Yellow World'
-const myNumber = 100
-
-function add(x, y){
-    return x + y
-}
+const tutorial = "https://www.youtube.com/watch?v=pgWZLS75Nmo"
+const amazingImage = "https://res.cloudinary.com/ddxwdqwkr/image/upload/c_scale,w_700,f_auto/v1742105960/building-large-javascript-applications/case-studies/advanced/cover.webp"
+const altText = "just a random pic"
+const imageWidth = 400
+const imageHeight = 400
 
 </script>
 
 <template>
-    <h1>{{myMessage}}</h1>
-    <h2>{{myNumber}}</h2>
-    <h3>2+2 = {{2+2}}</h3>
-    <h2>Add Two Numbers: {{ add(2, 2) }}</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ea illo eveniet voluptas unde sapiente impedit minus doloribus, laboriosam blanditiis porro error? Saepe beatae reiciendis architecto, nostrum eos commodi sapiente.</p>
+
+<a :href="tutorial">Vue Tutorial</a>
+<img :src="amazingImage" :alt="altText" :width="imageWidth" :height="imageHeight">
+
 </template>
