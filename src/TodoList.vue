@@ -1,39 +1,35 @@
 <script setup>
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 const newTask = ref('')
 const tasks = ref([])
 
 const addTask = () => {
-    if(newTask.value.trim() !== ''){
-        tasks.value.push(newTask.value)
-        newTask.value = ''
-    }
+  if (newTask.value.trim() !== '') {
+    tasks.value.push(newTask.value)
+    newTask.value = ''
+  }
 }
 
 const removeTask = (index) => {
-    tasks.value.splice(index, 1)
+  tasks.value.splice(index, 1)
 }
-
 </script>
 
 <template>
-<div class="todo-app">
+  <div class="todo-app">
     <div class="task-input">
-        <input v-model="newTask" @keyup.enter="addTask" placeholder="Add new task">
-        <button @click="addTask">Add task</button>
+      <input v-model="newTask" @keyup.enter="addTask" placeholder="Add new task" />
+      <button @click="addTask">Add task</button>
     </div>
 
     <ul class="task-list">
-        <li v-for="(task, index) in tasks" :key="index" class="task-item">
-            {{ task }}
+      <li v-for="(task, index) in tasks" :key="index" class="task-item">
+        {{ task }}
         <button @click="removeTask(index)" class="remove-button">Remove</button>
-                </li>
-
+      </li>
     </ul>
-</div>
-
-
+  </div>
 </template>
 
 <style scoped>
@@ -105,6 +101,6 @@ button:hover {
 }
 
 .remove-button:hover {
-  background-color: #c0392b;
+  background-color: #c03829;
 }
 </style>
