@@ -1,11 +1,5 @@
-<script setup>
-import GlobalStyle from './components/GlobalStyle.vue';
-import LocalStyle from './components/LocalStyle.vue';
-import CombinedStyle from './components/CombinedStyle.vue';
-</script>
+<script setup></script>
 <template>
-  <GlobalStyle/>
-  <LocalStyle/>
-  <CombinedStyle/>
+  <h1>hello</h1>
 </template>
 <style scoped></style>
