@@ -11,8 +11,14 @@ const addTask = () => {
     }
 }
 
+const removeTask = (index) => {
+    tasks.value.splice(index, 1)
+}
+
 </script>
 
 <template>
-    <h1>todo list</h1>
+
+
+
 </template>
